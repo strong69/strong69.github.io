@@ -15,10 +15,8 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-	<link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/defaults.css">
-  <link rel="stylesheet" href="css/nav-core.css">
-  <link rel="stylesheet" href="css/nav-layout.css">
+	<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />
+	<link rel="stylesheet" href="css/flatnav.css" />
 	<link rel="stylesheet" href="css/main.min.css">
 	
 	<!-- Chrome, Firefox OS and Opera -->
@@ -28,64 +26,132 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<script src="js/rem.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/flatnav.js"></script>
 
 </head>
 	<body>
-		<header>
-    <h1>Responsive Navigation</h1>
-</header>
 
-<a href="#" class="nav-button">Menu</a>
+<div class="flat-nav"><a class="responsive-bar"><span>FlatNav</span><i class="icon-reorder" ></i></a>
+        <div class="logo">FlatNav</div>
+        <ul>
+            <li class="color1 effect1"><a><span>Shop</span></a>
+                <ul class="column-based">
+                    <li><a><span>Apple</span></a>
+                    </li>
+                    <li><a><span>Windows Apps</span></a>
+                    </li>
+                    <li><a><span>Skype Credits</span></a>
+                    </li>
+                    <li><a><span>Phone call</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="color2 effect1"><a><span>portfolio</span></a>
+                <ul class="column-based">
+                    <li><a>Programming</a>
+                        <ul>
+                            <li><a>C/C++</a>
+                            </li>
+                            <li><a>Java Dev.</a>
+                            </li>
+                            <li><a>Visual Basic</a>
+                            </li>
+                            <li><a>Visual CSharp</a>
+                            </li>
+                            <li><a>Fox Pro</a>
+                            </li>
+                            <li><a>Languages</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a>Programming</a>
+                        <ul>
+                            <li><a>C/C++</a>
+                            </li>
+                            <li><a>Java Dev.</a>
+                            </li>
+                            <li><a>Visual Basic</a>
+                            </li>
+                            <li><a>Visual CSharp</a>
+                            </li>
+                            <li><a>Fox Pro</a>
+                            </li>
+                            <li><a>Languages</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a>Web Design</a>
+                        <ul>
+                            <li><a>HTML</a>
+                            </li>
+                            <li><a>CSS</a>
+                            </li>
+                            <li><a>Javascript</a>
+                            </li>
+                            <li><a>php</a>
+                            </li>
+                            <li><a>jQuery</a>
+                            </li>
+                            <li><a>ASP.net</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a>Graphics Design</a>
+                        <ul>
+                            <li><a>Adobe Illustrator</a>
+                            </li>
+                            <li><a>Photoshop</a>
+                            </li>
+                            <li><a>Fireworks</a>
+                            </li>
+                            <li><a>After Effects</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="color3 effect1"><a><span>Blog</span></a>
+                <ul class="row-based">
+                    <li><a>Portfolio 1</a>
+                    </li>
+                    <li><a>Portfolio 2</a>
+                    </li>
+                    <li><a>Portfolio 3</a>
+                    </li>
+                    <li><a>Portfolio 4</a>
+                    </li>
+                    <li><a>Portfolio 5</a>
+                    </li>
+                    <li><a>Portfolio 6</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="color4 effect1"><a><span>About</span></a>
+                <ul class="column-based">
+                    <li><a><span>Typography</span><img src="img/portfolio-02.jpg_%3b%20filename_%3dUTF-8%27%27portfolio-02.jpg" alt="image"/><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p></a>
+                    </li>
+                    <li><a><span>Webtricks</span><img src="img/portfolio-03.jpg_%3b%20filename_%3dUTF-8%27%27portfolio-03.jpg" alt="image"/><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p></a>
+                    </li>
+                    <li><a><span>Games Dev.</span><img src="img/portfolio-04.jpg_%3b%20filename_%3dUTF-8%27%27portfolio-04.jpg" alt="image"/><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p></a>
+                    </li>
+                    <li><a><span>Sluggish Design</span><img src="img/portfolio-05.jpg_%3b%20filename_%3dUTF-8%27%27portfolio-05.jpg" alt="image"/><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="color5 effect1"><a><span>Contact</span></a>
+                <div>
+                    <form>
+                        <input type="text" placeholder="Your Name" />
+                        <input type="text" placeholder="E-mail" />
+                        <textarea placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send" />
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
 
-<nav class="nav">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li class="nav-submenu"><a href="#">Services</a>
-            <ul>
-                <li><a href="#">Some Service</a></li>
-                <li><a href="#">Another Service</a></li>
-                <li><a href="#">Good Service</a></li>
-                <li><a href="#">Room Service</a></li>
-            </ul>
-        </li>
-        <li class="nav-submenu"><a href="#">Products</a>
-            <ul>
-                <li><a href="#">Food</a></li>
-                <li class="nav-submenu"><a href="#">Drinks</a>
-                    <ul>
-                        <li><a href="#">Water</a></li>
-                        <li class="nav-submenu"><a href="#">Cola</a>
-                            <ul>
-                                <li class="nav-submenu nav-left"><a href="#">Coca Cola</a>
-                                    <ul>
-                                        <li><a href="#">This one goes left!</a></li>
-                                        <li><a href="#">Too much sugar...</a></li>
-                                        <li><a href="#">Yummy</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Pepsi</a></li>
-                                <li><a href="#">River</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Lemonade</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Candy</a></li>
-                <li><a href="#">Ice Cream</a></li>
-            </ul>
-        </li>
-        <li class="nav-submenu"><a href="#">Albums</a>
-            <ul>
-                <li><a href="#">Christmas</a></li>
-                <li><a href="#">New Year</a></li>
-                <li><a href="#">Easter</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
 
 <div class="container">
 	<div class="main">
@@ -205,16 +271,6 @@
 </div>
 </div>
 </div>
-	
-	
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/nav.jquery.min.js"></script>
-
-
-	<script>
-    $('.nav').nav();
-</script>
-	
 	
 	
 	

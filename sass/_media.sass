@@ -6,22 +6,69 @@
 @media only screen and (max-width : 1200px)
 		/**/
 
-@media only screen and (min-width: 1190px)  
-	/**/
-	
 
-@media only screen and (max-width: 1180px)  
-	/**/
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: 992px)
 	/**/
 
+@media only screen and (max-width:500px) 
 
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px)
-	/**/
+	
+	div.flat-nav .responsive-bar
+		display: table
+	
 
+	div.flat-nav>div.logo
+		width: 100%
+		text-align: center
+		display: none
+	
+	
+	div.flat-nav>ul
+		width: 100%
+		text-align: center
+		display: none
+	
+	
+	div.flat-nav.show-it>ul
+		display: block
+	
+	
+	div.flat-nav>ul>li
+		display: block
+		position: relative
+		width: 80%
+		margin-left: 10%
+	
+	
+	div.flat-nav>ul>li>ul, div.flat-nav>ul>li>div	
+		right: auto
+		left: 0
+		width: 100%
+	
+
+
+@media only screen and (min-width:501px) and (max-width:639px) 
+
+	div.flat-nav>div.logo
+		width: 100%
+		text-align: center
+	
+	
+	div.flat-nav>ul
+		width: 100%
+		text-align: center
+	
+	
+	div.flat-nav>ul>li>ul.column-based
+		right: auto
+		left: 7px
+	
+	
+	div.flat-nav>ul.column-based>li
+		text-align: center
+	
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
